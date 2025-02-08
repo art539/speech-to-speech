@@ -18,7 +18,8 @@
 - [Paraformer - FunASR](https://github.com/modelscope/FunASR)
 
 **LLM**
-- Any instruction-following model on the [Hugging Face Hub](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending) via Transformers 
+- أي نموذج يتبع التعليمات على
+-  [Hugging Face Hub](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending) via Transformers 
 - [mlx-lm](https://github.com/ml-explore/mlx-examples/blob/main/llms/README.md)
 - [OpenAI API](https://platform.openai.com/docs/quickstart)
 
