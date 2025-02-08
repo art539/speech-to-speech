@@ -1,42 +1,19 @@
-<div align="center">
-  <div>&nbsp;</div>
-  <img src="logo.png" width="600"/> 
-</div>
+### البناء
+يتكون من الأجزاء التالية:
+1. **اكتشاف نشاط الصوت (VAD)**
+2. **تحويل الكلام إلى نص (STT)**
+3. **نموذج اللغة (LM)**
+4. **تحويل النص إلى كلام (TTS)**
 
-# Speech To Speech: an effort for an open-sourced and modular GPT4-o
-
-
-## 📖 Quick Index
-* [Approach](#approach)
-  - [Structure](#structure)
-  - [Modularity](#modularity)
-* [Setup](#setup)
-* [Usage](#usage)
-  - [Docker Server approach](#docker-server)
-  - [Server/Client approach](#serverclient-approach)
-  - [Local approach](#local-approach-running-on-mac)
-* [Command-line usage](#command-line-usage)
-  - [Model parameters](#model-parameters)
-  - [Generation parameters](#generation-parameters)
-  - [Notable parameters](#notable-parameters)
-
-## Approach
-
-### Structure
-This repository implements a speech-to-speech cascaded pipeline consisting of the following parts:
-1. **Voice Activity Detection (VAD)**
-2. **Speech to Text (STT)**
-3. **Language Model (LM)**
-4. **Text to Speech (TTS)**
-
-### Modularity
-The pipeline provides a fully open and modular approach, with a focus on leveraging models available through the Transformers library on the Hugging Face hub. The code is designed for easy modification, and we already support device-specific and external library implementations:
+### الوحدات النمطية
+يركز خط الأنابيب على Transformers على مركز Hugging Face.
 
 **VAD** 
 - [Silero VAD v5](https://github.com/snakers4/silero-vad)
 
 **STT**
-- Any [Whisper](https://huggingface.co/docs/transformers/en/model_doc/whisper) model checkpoint on the Hugging Face Hub through Transformers 🤗, including [whisper-large-v3](https://huggingface.co/openai/whisper-large-v3) and [distil-large-v3](https://huggingface.co/distil-whisper/distil-large-v3)
+- Any [Whisper](https://huggingface.co/docs/transformers/en/model_doc/whisper) نموذج على Hugging Face Hub من خلال Transformers 
+بما في ذلك [whisper-large-v3](https://huggingface.co/openai/whisper-large-v3) and [distil-large-v3](https://huggingface.co/distil-whisper/distil-large-v3)
 - [Lightning Whisper MLX](https://github.com/mustafaaljadery/lightning-whisper-mlx?tab=readme-ov-file#lightning-whisper-mlx)
 - [Paraformer - FunASR](https://github.com/modelscope/FunASR)
 
@@ -50,53 +27,54 @@ The pipeline provides a fully open and modular approach, with a focus on leverag
 - [MeloTTS](https://github.com/myshell-ai/MeloTTS)
 - [ChatTTS](https://github.com/2noise/ChatTTS?tab=readme-ov-file)
 
-## Setup
+## الاعداد
 
-Clone the repository:
+استنساخ المستودع:
 ```bash
 git clone https://github.com/huggingface/speech-to-speech.git
 cd speech-to-speech
 ```
 
-Install the required dependencies using [uv](https://github.com/astral-sh/uv):
+تثبيت التبعيات المطلوبة باستخدام [uv](https://github.com/astral-sh/uv):
 ```bash
 uv pip install -r requirements.txt
 ```
 
-For Mac users, use the `requirements_mac.txt` file instead:
+بالنسبة لمستخدمي Mac، استخدم
+`requirements_mac.txt`  
 ```bash
 uv pip install -r requirements_mac.txt
 ```
 
-If you want to use Melo TTS, you also need to run:
+إذا اردت استخدام Melo TTS، فق بتشغيل:
 ```bash
 python -m unidic download
 ```
 
 
-## Usage
+## ## الاستخدام
 
-The pipeline can be run in two ways:
-- **Server/Client approach**: Models run on a server, and audio input/output are streamed from a client.
-- **Local approach**: Runs locally.
+يمكن تشغيل خط الأنابيب بطريقتين:
+- **نهج الخادم/العميل**: يتم تشغيل النماذج على الخادم، ويتم بث الإدخال/الإخراج الصوتي من العميل.
+- **النهج المحلي**: يتم التشغيل محليًا.
 
-### Recommended setup 
+### الإعداد الموصى به
 
-### Server/Client Approach
+### نهج الخادم/العميل
 
-1. Run the pipeline on the server:
+1. قم بتشغيل خط الأنابيب على الخادم:
    ```bash
    python s2s_pipeline.py --recv_host 0.0.0.0 --send_host 0.0.0.0
    ```
 
-2. Run the client locally to handle microphone input and receive generated audio:
+2. قم بتشغيل العميل محليًا للتعامل مع إدخال الميكروفون واستقبال الصوت الناتج:
    ```bash
    python listen_and_play.py --host <IP address of your server>
    ```
 
-### Local Approach (Mac)
+### النهج المحلي (Mac)
 
-1. For optimal settings on Mac:
+1. للحصول على الإعدادات المثالية على Mac:
    ```bash
    python s2s_pipeline.py --local_mac_optimal_settings
    ```
