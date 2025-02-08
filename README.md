@@ -18,12 +18,12 @@
 - [Paraformer - FunASR](https://github.com/modelscope/FunASR)
 
 **LLM**
-- Any instruction-following model on the [Hugging Face Hub](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending) via Transformers 🤗
+- Any instruction-following model on the [Hugging Face Hub](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending) via Transformers 
 - [mlx-lm](https://github.com/ml-explore/mlx-examples/blob/main/llms/README.md)
 - [OpenAI API](https://platform.openai.com/docs/quickstart)
 
 **TTS**
-- [Parler-TTS](https://github.com/huggingface/parler-tts) 🤗
+- [Parler-TTS](https://github.com/huggingface/parler-tts) 
 - [MeloTTS](https://github.com/myshell-ai/MeloTTS)
 - [ChatTTS](https://github.com/2noise/ChatTTS?tab=readme-ov-file)
 
@@ -31,7 +31,7 @@
 
 استنساخ المستودع:
 ```bash
-git clone https://github.com/huggingface/speech-to-speech.git
+git clone (https://github.com/art539/speech-to-speech.git)
 cd speech-to-speech
 ```
 
