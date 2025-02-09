@@ -93,7 +93,7 @@ https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install
 
 ### الاستخدام الموصى به مع Cuda
 
-الاستفادة من Torch Compile لـ Whisper وParler-TTS. **يتيح استخدام Parler-TTS بث إخراج الصوت، مما يقلل بشكل أكبر من زمن الوصول الإجمالي** 🚀:
+الاستفادة من Torch Compile لـ Whisper وParler-TTS. **يتيح استخدام Parler-TTS بث إخراج الصوت، مما يقلل بشكل أكبر من زمن الوصول الإجمالي** :
 
 ```bash
 python s2s_pipeline.py \
@@ -239,7 +239,7 @@ https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install
 
 ### الاستخدام الموصى به مع Cuda
 
-الاستفادة من Torch Compile لـ Whisper وParler-TTS. **يتيح استخدام Parler-TTS بث إخراج الصوت، مما يقلل بشكل أكبر من زمن الوصول الإجمالي** 🚀:
+الاستفادة من Torch Compile لـ Whisper وParler-TTS. **يتيح استخدام Parler-TTS بث إخراج الصوت، مما يقلل بشكل أكبر من زمن الوصول الإجمالي** :
 
 ```bash
 python s2s_pipeline.py \
