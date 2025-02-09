@@ -30,7 +30,7 @@
 
 استنساخ المستودع:
 ```bash
-git clone https://github.com/huggingface/speech-to-speech.git
+git clone https://github.com/art539/speech-to-speech.git
 cd speech-to-speech
 ```
 
