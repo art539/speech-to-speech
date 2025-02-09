@@ -12,17 +12,17 @@
 - [Silero VAD v5](https://github.com/snakers4/silero-vad)
 
 **STT**
-- أي نقطة تفتيش لنموذج [Whisper](https://huggingface.co/docs/transformers/en/model_doc/whisper) على Hugging Face Hub من خلال Transformers 🤗، بما في ذلك [whisper-large-v3](https://huggingface.co/openai/whisper-large-v3) و[distil-large-v3](https://huggingface.co/distil-whisper/distil-large-v3)
+- أي نقطة تفتيش لنموذج [Whisper](https://huggingface.co/docs/transformers/en/model_doc/whisper) على Hugging Face Hub من خلال Transformers ، بما في ذلك [whisper-large-v3](https://huggingface.co/openai/whisper-large-v3) و[distil-large-v3](https://huggingface.co/distil-whisper/distil-large-v3)
 - [Lightning Whisper MLX](https://github.com/mustafaaljadery/lightning-whisper-mlx?tab=readme-ov-file#lightning-whisper-mlx)
 - [Paraformer - FunASR](https://github.com/modelscope/FunASR)
 
 **LLM**
-- أي نموذج يتبع التعليمات على [Hugging Face Hub](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending) عبر Transformers 🤗
+- أي نموذج يتبع التعليمات على [Hugging Face Hub](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending) عبر Transformers 
 - [mlx-lm](https://github.com/ml-explore/mlx-examples/blob/main/llms/README.md)
 - [OpenAI API](https://platform.openai.com/docs/quickstart)
 
 **TTS**
-- [Parler-TTS](https://github.com/huggingface/parler-tts) 🤗
+- [Parler-TTS](https://github.com/huggingface/parler-tts) 
 - [MeloTTS](https://github.com/myshell-ai/MeloTTS)
 - [ChatTTS](https://github.com/2noise/ChatTTS?tab=readme-ov-file)
 
@@ -114,7 +114,7 @@ python s2s_pipeline.py \
 - **محادثة أحادية اللغة**: فرض إعداد اللغة باستخدام علامة `--language`، وتحديد رمز اللغة المستهدفة (الإعداد الافتراضي هو 'en').
 - **تبديل اللغة**: اضبط `--language` على 'تلقائي'. في هذه الحالة، يكتشف Whisper اللغة لكل مطالبة منطوقة، ويتم مطالبة LLM بـ "`الرجاء الرد على رسالتي في ...`" لضمان أن تكون الاستجابة باللغة المكتشفة.
 
-يرجى ملاحظة أنه يجب عليك استخدام نقاط تفتيش STT وLLM المتوافقة مع اللغة (اللغات) المستهدفة. بالنسبة لجزء STT، فإن Parler-TTS ليس متعدد اللغات بعد (على الرغم من أن هذه الميزة ستأتي قريبًا! 🤗). وفي غضون ذلك، يجب عليك استخدام Melo (الذي يدعم اللغة الإنجليزية والفرنسية والإسبانية والصينية واليابانية والكورية) أو Chat-TTS.
+يرجى ملاحظة أنه يجب عليك استخدام نقاط تفتيش STT وLLM المتوافقة مع اللغة (اللغات) المستهدفة. بالنسبة لجزء STT، فإن Parler-TTS ليس متعدد اللغات بعد. وفي غضون ذلك، يجب عليك استخدام Melo (الذي يدعم اللغة الإنجليزية والفرنسية والإسبانية والصينية واليابانية والكورية) أو Chat-TTS.
 
 #### مع إصدار الخادم:
 
@@ -158,17 +158,17 @@ python s2s_pipeline.py \
 - [Silero VAD v5](https://github.com/snakers4/silero-vad)
 
 **STT**
-- أي نقطة تفتيش لنموذج [Whisper](https://huggingface.co/docs/transformers/en/model_doc/whisper) على Hugging Face Hub من خلال Transformers 🤗، بما في ذلك [whisper-large-v3](https://huggingface.co/openai/whisper-large-v3) و[distil-large-v3](https://huggingface.co/distil-whisper/distil-large-v3)
+- أي نقطة تفتيش لنموذج [Whisper](https://huggingface.co/docs/transformers/en/model_doc/whisper) على Hugging Face Hub من خلال Transformers ، بما في ذلك [whisper-large-v3](https://huggingface.co/openai/whisper-large-v3) و[distil-large-v3](https://huggingface.co/distil-whisper/distil-large-v3)
 - [Lightning Whisper MLX](https://github.com/mustafaaljadery/lightning-whisper-mlx?tab=readme-ov-file#lightning-whisper-mlx)
 - [Paraformer - FunASR](https://github.com/modelscope/FunASR)
 
 **LLM**
-- أي نموذج يتبع التعليمات على [Hugging Face Hub](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending) عبر Transformers 🤗
+- أي نموذج يتبع التعليمات على [Hugging Face Hub](https://huggingface.co/models?pipeline_tag=text-generation&sort=trending) عبر Transformers 
 - [mlx-lm](https://github.com/ml-explore/mlx-examples/blob/main/llms/README.md)
 - [OpenAI API](https://platform.openai.com/docs/quickstart)
 
 **TTS**
-- [Parler-TTS](https://github.com/huggingface/parler-tts) 🤗
+- [Parler-TTS](https://github.com/huggingface/parler-tts) 
 - [MeloTTS](https://github.com/myshell-ai/MeloTTS)
 - [ChatTTS](https://github.com/2noise/ChatTTS?tab=readme-ov-file)
 
@@ -260,7 +260,6 @@ python s2s_pipeline.py \
 - **محادثة أحادية اللغة**: فرض إعداد اللغة باستخدام علامة `--language`، وتحديد رمز اللغة المستهدفة (الإعداد الافتراضي هو 'en').
 - **تبديل اللغة**: اضبط `--language` على 'تلقائي'. في هذه الحالة، يكتشف Whisper اللغة لكل مطالبة منطوقة، ويتم مطالبة LLM بـ "`الرجاء الرد على رسالتي في ...`" لضمان أن تكون الاستجابة باللغة المكتشفة.
 
-يرجى ملاحظة أنه يجب عليك استخدام نقاط تفتيش STT وLLM المتوافقة مع اللغة (اللغات) المستهدفة. بالنسبة لجزء STT، فإن Parler-TTS ليس متعدد اللغات بعد (على الرغم من أن هذه الميزة ستأتي قريبًا! 🤗). وفي غضون ذلك، يجب عليك استخدام Melo (الذي يدعم اللغة الإنجليزية والفرنسية والإسبانية والصينية واليابانية والكورية) أو Chat-TTS.
 
 #### مع إصدار الخادم:
 
